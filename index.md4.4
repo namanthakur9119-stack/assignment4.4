@@ -1,0 +1,191 @@
+# Assignment 4.4 — Metadata & Page Setup
+
+## Q1. Set UTF-8 for Character Encoding
+
+**Answer:**
+
+HTML file ke `<head>` section mein ye code add karo:
+
+```html
+<meta charset="UTF-8">
+```
+
+**Explanation:** UTF-8 ki help se webpage par English, Hindi aur special characters properly display hote hain.
+
+## Q2. Add a Mobile Viewport Meta Tag
+
+**Answer:**
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+**Explanation:** Ye tag webpage ko mobile, tablet aur computer screens ke according properly display karne mein help karta hai.
+
+## Q3. Write a Meaningful Title
+
+**Answer:**
+
+```html
+<title>My College Portfolio</title>
+```
+
+**Explanation:** Title browser ke tab mein show hota hai. Har HTML page ka title us page ke content ke according hona chahiye.
+
+Examples:
+
+* Home page: `My Portfolio - Home`
+* Registration page: `Student Registration Form`
+* Marks table: `Student Marks Table`
+
+## Q4. Add a Meta Description
+
+**Answer:**
+
+```html
+<meta name="description" content="Welcome to my college portfolio website. Learn about my course, skills, projects, and interests.">
+```
+
+**Explanation:** Meta description webpage ke content ka short summary hota hai. Search engines ise search results mein dikha sakte hain.
+
+## Q5. Add a Favicon
+
+**Answer:**
+
+HTML file ke `<head>` section mein ye code add karo:
+
+```html
+<link rel="icon" type="image/png" href="images/favicon.png">
+```
+
+**Explanation:** Favicon ek chhota icon hota hai jo browser tab mein page title ke paas dikhai deta hai.
+
+**Important:** Project folder mein `images` naam ka folder banao aur uske andar `favicon.png` naam ki image rakho.
+
+Folder structure:
+
+```text
+my-project/
+│
+├── index.html
+├── style.css
+│
+└── images/
+    └── favicon.png
+```
+
+Image ka naam aur path code se exactly match hona chahiye.
+
+## Q6. Verify CSS Links and File Paths
+
+**Answer:**
+
+CSS file ko HTML se connect karne ke liye `<head>` section mein ye code add karo:
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+**Explanation:** Agar HTML aur CSS files same folder mein hain, to `href="style.css"` use karo. Agar CSS file kisi doosre folder mein hai, to uska correct relative path likho.
+
+Example folder structure:
+
+```text
+my-project/
+│
+├── index.html
+├── css/
+│   └── style.css
+│
+└── images/
+    └── favicon.png
+```
+
+Is structure mein CSS link hoga:
+
+```html
+<link rel="stylesheet" href="css/style.css">
+```
+
+## Final Answer — Complete HTML Code
+
+**File name:** `index.html`
+
+Neeche diya gaya complete code copy karke `index.html` mein paste kar sakte ho.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Mobile Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>My College Portfolio</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Welcome to my college portfolio website. Learn about my course, skills, projects, and interests.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My College Portfolio</h1>
+        <p>This website contains information about my college course, skills, and projects.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About My Course</h2>
+            <p>I am a first-year Computer Science Engineering student.</p>
+        </section>
+
+        <section>
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>My Goal</h2>
+            <p>My goal is to improve my programming skills and build useful projects.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My College Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
+```
+
+## Submission Requirements
+
+Assignment submit karne se pehle ye checklist complete karo:
+
+1. Apni HTML file mein UTF-8 encoding add karo.
+2. Mobile viewport meta tag add karo.
+3. Meaningful page title likho.
+4. Meta description add karo.
+5. `images/favicon.png` file add karo.
+6. CSS file ka correct path check karo.
+7. HTML file browser mein open karo.
+8. Browser tab mein favicon dikhne ka screenshot lo.
+9. Updated HTML file aur metadata code submit karo.
+
+**Note:** Agar favicon turant show nahi hota, to image ka path aur filename check karo. Browser refresh karo; zarurat pade to hard refresh bhi try karo.
